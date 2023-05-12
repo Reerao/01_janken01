@@ -1,0 +1,68 @@
+:root {
+  --animationCount: 1;
+  }
+
+body{
+    background-color: #1a191c;
+}
+
+.wrap{
+  position: relative;
+
+}
+
+.laundryset{
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(50%) translateX(-50%);
+    -webkit-transform: translateY(50%) translateX(-50%);
+}
+
+  .laundryset{
+    width:1100px;
+    height:299.944444px;
+    background:url(../img/laundrysetmin.png) no-repeat;
+    /* animation: guru 2.9s steps(18) infinite; */
+
+}
+
+.laundryset.on-animation{
+animation: guru 2.9s steps(18) infinite;
+}
+
+.laundryset.is-stopped{
+  animation: guru 2.9s steps(18) var(--animationCount) forwards;
+  /* animation-name: guru;
+  animation-duration: 2s;
+  animation-iteration-count: ;
+  animation-fill-mode: ; */
+
+}
+
+
+@keyframes guru {
+    
+    to{
+      background-position: 0px -5399px;
+  }
+
+}
+@-webkit-keyframes guru {
+    to{
+        background-position: -1580px 0;
+    }
+}
+@-moz-keyframes guru {
+    to{
+        background-position: -1580px 0;
+    }
+}
+
+/* .wrap:hover .laundryset{
+  animation-play-state: paused;
+} */
+
+
